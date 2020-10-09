@@ -1,0 +1,67 @@
+* {
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+}
+
+body {
+   font-family: 'Roboto', sans-serif;
+   font-size: 17px;
+   line-height: 1.7;
+   background-image: linear-gradient(
+      120deg,
+      rgb(122, 120, 120),
+      rgb(44, 41, 41)
+   );
+   height: 100vh;
+   width: 100%;
+   overflow: hidden;
+}
+
+.container {
+   width: 70%;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   flex-direction: column;
+   margin: auto;
+   margin-top: 15vh;
+   box-shadow: 5px 5px 3px rgba(44, 41, 41, 0.6);
+}
+
+.search-input-div {
+   margin: 0 auto;
+   /* margin-top: 15vh; */
+   width: 100%;
+}
+
+.input {
+   width: 100%;
+   padding: 1rem 2rem;
+   border: none;
+   outline: none;
+   font-size: 1.2rem;
+}
+
+.autocomplete-section {
+   width: 100%;
+   transition: all 3s ease;
+}
+
+.autocomplete-section div {
+   background-color: #333;
+   color: #fff;
+   width: 100%;
+   padding: 1rem 1rem;
+   border-bottom: 1px solid #fff;
+   cursor: pointer;
+   transition: all 0.5s ease;
+}
+
+.autocomplete-section div:hover {
+   background-color: rgb(122, 120, 120);
+}
+
+.autocomplete-section div:last-child {
+   border: none;
+}
